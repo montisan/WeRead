@@ -1,0 +1,104 @@
+.app {
+    display: flex;
+    height: 100%;
+
+    &__article {
+        flex: 1;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: auto;
+        background-color: #f2f2f2;
+        padding: 30px 0px;
+
+        & > div {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px 60px;
+            min-height: 100%;
+        }
+        
+
+        .rich_media_content {
+            * {
+                -webkit-max-logical-width: 100%;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box !important;
+                -webkit-box-sizing: border-box !important;
+                word-wrap: break-word !important;
+            }
+            
+            p {
+                clear: both;
+                margin: 0 0;
+                white-space: normal;
+            }
+            img {
+                *zoom: 1;
+                max-width: 100%;
+                *max-width: 96%;
+                height: auto !important;
+            }
+            ul {
+                padding-left: 30px;
+            }
+            blockquote {
+                margin: 0;
+                padding-left: 10px;
+                border-left: 3px solid #dbdbdb;
+            }
+            ol,
+            ul,
+            dl {
+                *margin-right: 0px;
+                padding: 0 0 0 30px;
+            }
+            table.noBorderTable td,
+            table.noBorderTable th,
+            table.noBorderTable caption {
+                border: 1px dashed #ddd;
+            }
+            table {
+                margin-bottom: 10px;
+                border-collapse: collapse;
+                display: table;
+                width: 100%;
+                margin: 0 auto;
+            }
+            td,
+            th {
+                word-wrap: break-word;
+                word-break: break-all;
+                padding: 5px;
+                border: 1px solid #ddd;
+            }
+            caption {
+                border: 1px dashed #ddd;
+                border-bottom: 0;
+                padding: 3px;
+                text-align: center;
+            }
+            th {
+                border-top: 2px solid #bbb;
+                background: #f7f7f7;
+            }
+            td p {
+                margin: 0;
+                padding: 0;
+                width: auto;
+                height: auto;
+            }
+            hr {
+                border: 0px;
+                border-top: 1px solid #ccc;
+            }
+            pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+        }
+
+        
+    }
+}

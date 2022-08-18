@@ -1,0 +1,28 @@
+@import './vendor.less';
+
+.accounts {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    &__list {
+        height: calc(100% - 32px);
+        overflow: auto;
+
+        .ant-list-item-meta-title {
+            .mark {
+                color: @primary-color;
+            }
+        }
+
+        .ant-list-item {
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        .ant-list-item.actived {
+            background-color: rgba(251, 97, 55, 0.2);
+        }
+    }
+}

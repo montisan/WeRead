@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "allowJs": true,
+        "jsx": "react"
+    },
+    "include": [
+        "./background/*"
+    ],
+     "exclude": [
+         "./node_modules/"
+     ]
+}
