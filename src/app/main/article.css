@@ -174,5 +174,9 @@
 }
 
 .rich_media_content .code-snippet,.rich_media_content .code-snippet__fix,.rich_media_content .code-snippet *,.rich_media_content .code-snippet__fix * {
-    max-width: 1000%!important
+    max-width: 100%!important
+}
+
+.rich_media img {
+    max-width: 100% !important;
 }

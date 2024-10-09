@@ -44,7 +44,8 @@ export default class App extends Component<
                 if (value.html) {
                     const html = value.html
                         .replace(/data-src/g, "src")
-                        .replace("visibility: hidden;", "");
+                        .replace("visibility: hidden;", "")
+                        .replace("opacity: 0;", "");
                     // const src = `data:text/html;charset=utf-8,${html}`;
                     this.setState({
                         articleHtml: html,
